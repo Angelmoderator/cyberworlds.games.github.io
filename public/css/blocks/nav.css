@@ -1,16 +1,11 @@
 /*  Навигация */
 
 nav.navigation{
-    display: flex;
-    border-left: 4px solid #00FFF0;
-    flex-direction: column;
-    background-color: black;
-    justify-content: space-between;
-
-    position: fixed;left:0;top:48px;height: calc(100% - 48px);
-
-    width: 70px;
+    background-color: black;border-left: 4px solid #00FFF0;
     box-shadow: 0 0 0.2rem rgb(0 0 0 / 10%), 0 0.2rem 0.4rem rgb(0 0 0 / 20%);
+    display: flex;flex-direction: column;justify-content: space-between;
+    position: fixed;left:0;top:48px;height: calc(100% - 48px);
+    width: 70px;
     z-index:100;
 }
 nav.navigation p{
@@ -20,39 +15,28 @@ nav.navigation p{
 
 nav.navigation  a{
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    display: flex;flex-direction: column;justify-content: center;align-items:center;
     padding: 6px;
 }
 
-nav.navigation a.error{
-    justify-self:flex-end;
-}
+nav.navigation a.error{justify-self:flex-end;}
 nav.navigation .config{
-   margin-top: 10px;
-   background-color: black;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-top: 10px; padding: 0;
+    background-color: black;
+    display: flex;flex-direction: row;justify-content: space-between;
 }
 nav.navigation .config *{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 2px;
+    display: flex;justify-content: center;
+    margin: 0;padding: 2px;
     width: 30px;
 }
-nav.navigation .config :not(img):hover{
-    background-color: white;
-    color: black;
-}
-nav.navigation .config:hover{cursor: pointer;}
-nav.navigation a img{width:  30px;height: 30px;}
-nav.navigation a:not(.config):hover {cursor: pointer;color: black;background-color: white;}/**/
-a.error p{color: #FF433F;}
+nav.navigation .config :not(img):hover  {background-color: white;color: black;}
+nav.navigation .config:hover            {cursor: pointer;}
+nav.navigation a img                    {width:  30px;height: 30px;}
+nav.navigation a:not(.config):hover     {cursor: pointer;color: black;background-color: white;}/**/
+a.error p                               {color: #FF433F;}
+
+/*Пасхалка*/
 
 /* @media screen and (max-width: 640px){
     nav.navigation{
