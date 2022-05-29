@@ -1,0 +1,50 @@
+/*Подвал*/
+
+footer{
+    margin: 0;
+    z-index: 20;
+    background-color: black;
+}
+footer hr{
+    height: 1px;
+    border: 1px solid white;
+    background-color: white;
+    color: white;
+    margin: 5px 0;
+}
+footer h5.special{
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+}
+.special span{
+    float: right;
+}
+footer h5{padding: 5px;font-size: 14px;}
+
+
+
+footer .FAQ{
+    display: flex;
+    justify-content: space-around;
+}
+footer .FAQ > a{
+    font-size: 14px;
+    padding: 10px;
+}
+footer .FAQ a::after{
+    content: "_ |";
+}
+
+footer .info{
+    max-width: 1200px;
+    margin:  20px auto;
+    padding: 0px;
+}
+.iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%; min-height: 420px;
+}
+

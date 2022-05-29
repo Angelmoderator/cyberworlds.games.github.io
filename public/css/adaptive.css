@@ -1,0 +1,70 @@
+
+.search-input{width: 76%!important;}
+.search-list.button{display: none;}
+.search-start{width: 24%!important;}
+
+@media screen and (max-width: 1024px){
+    /*Game*/
+    main{
+        margin-top: 100px;
+    }
+    .special{
+        margin-top: 60px;
+    }
+    .description
+    {
+        margin-top: 60px;
+    }
+    .orbit-previous, .orbit-next{
+        padding: 170px 40px;
+    }
+
+    /*Error*/
+    .error-attention{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+    /*Game*/
+    .logo{
+        border: none!important;
+    }
+    nav.cell.shrink.navigation{
+        display: none;
+    }
+    main{
+        margin-left: 0px;
+        width: 100%!important;
+    }
+    .tabs{
+        justify-content: flex-start!important;
+        flex-wrap: wrap;
+    }
+    .bread{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bread::after, .bread::before{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .orbit-previous, .orbit-next{
+        padding: 140px 40px;
+    }
+    .search-input{width: 67%!important;}
+    .search-start{width: 33%!important;}
+
+    /*Enter*/
+    .form_enter{
+        width: 90%!important;
+    }
+    .cover{display: none!important;}
+
+    .game-list{
+        flex-direction: column-reverse;
+    }
+
+    
+}

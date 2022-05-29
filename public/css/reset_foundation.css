@@ -1,0 +1,177 @@
+/* Переписыывание стилей Foundation  <--> Общее <-->  */
+
+.primary{
+
+    background-color: #00FFF0 !important;
+    border: 2px solid #00FFF0 !important;
+    padding: 10px 20px;
+
+    color: black!important;
+
+   
+}
+.primary:hover{
+    background-color: white!important;
+    color: black!important;
+    border:2px solid white!important;
+}
+
+.hollow.primary{
+    background-color: transparent !important;
+    border: 2px solid #00FFF0 !important;
+     color: #00FFF0!important;
+}
+.hollow.primary:hover{
+    background-color: #00FFF0!important;
+    color: black!important;
+}
+
+
+button > a{
+    color: black;
+    padding: 20px 40px;
+    font-size: 30px;
+}
+
+button:hover a{
+    color: #00FFF0;
+}
+    .button-group .button{
+        margin: 0;
+        margin: 0 1px 0 1px;
+    }
+
+    .is-dropdown-submenu{
+        min-width: 180px;
+    }
+
+    /*Таблица*/
+
+    table{
+        margin-bottom: 0;
+        border-collapse: separate; /* Способ отображения границы */ 
+        border-spacing: 5px;
+    }
+
+    thead{background-color: #00FFF0;color: black;}
+    tbody{background-color: transparent;color: #00FFF0;}
+    tbody tr:nth-child(even){background-color: transparent;}
+    tr > th{background-color: #00FFF0;color: black;}
+
+    td:first-child{ text-align:left;}
+    td{ margin: 10px;text-align: center ;}
+    th{text-align: center !important;}
+   
+    /*Табы*/
+
+    .tabs{
+        border: none;
+        background-color: transparent;
+    }
+    .tabs-content{background-color: transparent; color: white;padding: 0px;border: none; overflow: overlay; max-height: 360px;}
+    .tabs-content img{width: 100%;max-width: 100%;}
+    .tabs-title > a:focus, .tabs-title > a[aria-selected='true']{
+        background-color: #00FFF0;
+        color: black;
+    }
+    .tabs-title > a{
+        padding: 10px 20px;
+      
+        font-size: 20px;
+        background-color: transparent;
+        color: #00FFF0;
+       
+    }
+    .tabs-title > a:hover{background-color: white;color: black;}
+
+    /*Ссылки*/
+
+    a{color: #00FFF0;text-decoration: none;}    a:hover,a:focus{color: white;}
+
+    /*Обнуление стилей подсказок*/
+    
+    .has-tip{
+        cursor: pointer;
+    }    
+
+    .cell.enter.has-tip{border-bottom: none;font-weight: 400;}
+    .tooltip{max-width: 70rem;background-color: #00FFF0; color: black;}
+    .tooltip.right::before{border-color: transparent #00FFF0 transparent transparent;}
+    .tooltip::before{border-color: transparent  transparent #00FFF0 transparent;}
+    .tooltip.bottom::before{border-color: transparent  transparent #00FFF0 transparent;}
+    .tooltip.left::before{border-color: transparent transparent transparent #00FFF0;}
+    .tabs-panel{padding: 0;}
+
+    /*Переписывание кнопок переключения*/
+    .orbit-previous, .orbit-next{
+        padding: 200px 40px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus{
+        cursor: pointer;
+        background-color: rgb(0, 0, 0, 0.8);
+    }
+
+      /*переписывание label*/
+      .label{
+          background-color: #00FFF0;
+          color: black;
+          border: 3px solid #00FFF0;
+          margin: 2px;
+      }
+      .label:hover{
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+      }
+
+    /*Accordion*/
+    .accordion-item{background-color: #00FFF0;border: none;}
+    .accordion-content{background-color: #00FFF0;border: none;}
+    .accordion-title{
+        background-color: #00FFF0;
+
+        color: black;
+        font-size: 24px;
+        padding: 10px;
+        border: none;
+    }
+    :last-child > .accordion-content:last-child{
+        border-bottom: none;
+    }
+    .accordion-title:hover, .accordion-title:focus{background-color: white;color: black;}
+    .accordion-title::before{
+        color: black;
+    }
+    .accordion-content{background-color: black;color: white;}
+
+
+     /*Границ у Games*/
+     .is-dropdown-submenu{
+         border: none;
+     }
+
+
+     /*slider*/
+
+     .slider{
+         background-color: white;
+         height: 5px;
+     }
+     .slider-handle{
+         background-color: #00FFF0;
+         width: 30px;
+         height: 20px;
+     }
+     .slider-handle:hover{
+         background-color: white;
+     }
+     .slider-fill{
+         background-color: #00FFF0;
+         height: 5px;
+     }
+
+/* /Переписыывание стилей Foundation  <--> Общее <-->  */

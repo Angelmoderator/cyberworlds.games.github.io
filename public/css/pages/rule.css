@@ -1,0 +1,37 @@
+.main{
+    margin-top: 48px;
+}
+
+/*Соглашение с пользователем*/
+
+.user-title{
+    color: #00FFF0;
+  
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.user-title h1{
+    font-size: 40px;
+}
+.user-title h1::after{
+    content: "_ |";
+}
+
+.list_sections{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:10%;
+}
+.sections div{
+    margin: 20px;
+}
+.sections p{
+    margin: 2px;
+}
+
+li > a.is-active{
+    background-color: white;
+    color: black;
+}

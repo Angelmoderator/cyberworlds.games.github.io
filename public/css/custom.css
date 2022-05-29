@@ -1,0 +1,539 @@
+/* *:hover{
+    outline: 1px solid orange;
+} */
+
+/*Основное*/
+
+/*      Главная     */
+
+html{height: 100%;}
+
+    body{
+        align-items: stretch;align-content: space-between;justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .main{margin-top: 60px;}
+    .main > .grid-x:not(.titlename){margin-top: 20px;}
+
+    .black{background-color: rgb(1 ,1, 1, .8);color: white;}
+
+
+    /*-----------Пути-----------*/
+
+
+        .bread{
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            width: 100%;
+            line-height: 2;
+        }
+        .bread::before{
+            margin-right: 20px;
+        }
+        .bread::after{
+            margin-left: 20px;
+        }
+        .bread::after, .bread::before{
+            content: '';
+            width: 100%;
+            height: 3px;
+            display: block;
+            background-color: #00FFF0;
+        }
+
+        /* .bread__item{
+            margin-right: 50px;
+            position: relative;
+            font-size: 16px;
+            flex-shrink: 0;
+        } */
+        .bread a:last-child{margin-right: 0;}
+        .bread a{
+            margin-right: 50px;
+            position: relative;
+            font-size: 16px;
+            flex-shrink: 0;
+            color: #00FFF0;
+        }
+        .bread a:hover{color: white;}
+
+        .bread a:not(:last-child):after{
+            margin-left: 0px;
+            content: '';
+            position: absolute;
+            left: calc(100% + 16px); 
+            width: 17px;
+            height: 3px;
+            background-color: #00FFF0;
+            display: block;
+            top: 40%;
+        }
+
+
+/***Разделы main***/
+
+    /*-----------Наименования-----------*/
+
+    .title   {height: 60px;} 
+    .title h1{
+        border-left: 10px solid #00FFF0;
+        padding: 10px;margin: 0;
+        text-align: center;
+        font-weight: bolder;
+        color: #00FFF0;
+    }
+
+    /*-----------Данные о странице-----------*/
+
+    .data .button-group{
+     
+       margin-bottom: 0;
+    }
+
+    /*-----------Информация-----------*/
+    .expanded.button-group{
+        margin-bottom: 0;
+    }
+
+    .information{
+
+        display: flex;
+        align-content: center;
+        border-left: 5px solid #00FFF0;
+
+        background-color: rgb(1 ,1, 1, .8);
+        padding: 0px;
+
+        /* border: 4px solid #00FFF0;
+        border-top: 2px solid #00FFF0;
+        border-left: 12px solid #00FFF0; */
+        /* padding: 4px;margin: 0; */
+    }
+  
+    h2{text-align: center;color: #00FFF0;width: 100%;border: 4px solid #00FFF0;border-left: 20px solid #00FFF0; ;padding: 5px;}
+    .list-item td:nth-child(2n+1){color: white;}
+    .list-item td{
+        text-align: start;
+        line-height: 1.5em;
+      
+        width: 25%;
+        padding: 0 10px;
+        font-size: 18px;
+        height: 60px;
+        background-color: transparent;
+        /* border: 10px solid black; */
+    }
+    .list-item td h4{margin: 0;font-size: 1px;}
+    .list-item td a{font-size: 16px;}
+    .list-item li{
+        align-items: flex-start;
+    }
+
+    /*-----------Купить-----------*/
+
+    .buy{ 
+        text-align: center;
+        display: flex;flex-direction: column; 
+
+        /* border-left: 2px solid #00FFF0; border-right: 2px solid #00FFF0; */
+
+        position: relative;
+      
+    }
+
+    .buy .tabs-content{
+        max-height: 300px;
+        overflow: hidden;
+        padding: 0;
+                justify-content: space-between; align-content: space-between;
+    }
+
+    
+    .price h2{
+        
+        margin: 0 0 0 20px;
+        border: 5px solid #00FFF0;
+        background-color: #00FFF0;
+        padding: 10px 20px;
+        margin: 10px;
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        width: 100%;
+    }
+    .buy h3{
+        background-color: white;
+        color: black;
+        padding: 10px;
+        margin: 20px 10px;
+    }
+    .price{
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buy button{
+        margin: 10px;
+        margin-top: 30px;
+        font-size: 40px;
+        padding: 20px 20px;
+    }
+
+    .discount p{
+        background-color: #00FFF0;
+        color: black;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .add_action{
+        position:fixed;
+        top: 0;
+        right:0;
+        padding-right: 100px;
+        height: 100%;
+        border-left: 6px solid white;
+       
+    }
+    .add_action .group{        
+        margin-top: 48px;
+    }
+    .parent{
+        position: relative;
+    }
+
+    
+    .content{
+        max-height: 900px;
+    }
+
+/***Элементы***/
+
+    /*-----------game-product-----------*/
+
+    .game-product{
+        min-height: 100px;
+        background-color: rgb(1 ,1, 1, .8);
+        display: flex;
+        
+        align-items: center;
+        border: 2px solid transparent;
+    }
+    .game-product:hover{
+        border: 2px solid #00FFF0;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgb(1 ,1, 1, .8);
+        z-index: 2;
+    }
+    .game-product:hover h2{color: white;}
+    .game-product img{
+        width: auto;
+        height: 100px;
+    }
+    .game-product .game-info{
+        padding-right: 20px;
+        width: 100%
+    }
+    .game-product .game-value{
+        flex: 1 auto;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+
+    }
+        .game-discount{
+            background-color: #00FFF0;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: black;
+        }
+        .game-price{
+            font-size: 30px;
+            padding: 5px 10px;
+        }
+
+/*Соглашение с пользователем*/
+
+.user-title{
+    color: #00FFF0;
+  
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.user-title h1{
+    font-size: 40px;
+}
+.user-title h1::after{
+    content: "_ |";
+}
+
+.list_sections{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top:10%;
+}
+.sections div{
+    margin: 20px;
+}
+.sections p{
+    margin: 2px;
+}
+
+/*Предмет*/
+.item_discount{
+    position: relative;
+    margin: 10px;
+    border: 2px solid #00FFF0;
+    max-width: 100%;
+    background-color: black;
+    color: #00FFF0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 10px;
+}
+.item_discount:hover{
+    border-color: white;
+    color: white;
+}
+
+.item_discount:hover div span{
+    color: #00FFF0;
+}
+.item_discount img{
+    width: 200px !important;
+    padding: 5px;
+    background-color: white;
+}
+.item_discount .picture{
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+}
+.item_discount .game-block-image{
+    position: absolute; top:0;left:0;
+    width: 100%;height: 100%;margin: 0;
+    background-size: cover;background-repeat: no-repeat;background-position: center center!important;
+
+    /* width: 160px !important; */
+    opacity: 0.9;
+}
+.item_discount p{
+    padding: 10px;margin: 0;
+}
+.item_discount p span{
+    margin: 2px;border: 1px solid white;border-style: dashed;padding: 5px; 
+    color: white;  
+}
+.item_discount .price, .catalog-item__discount{
+    padding: 10px 20px;background-color: #00FFF0;color: black;
+}
+.item_discount .margin-auto{
+    margin-left: auto;
+    display: flex;align-content: center;align-items: center;
+}
+.item_discount div *{
+    margin: 0 10px;
+}
+.item_discount .price_count{
+    margin-left: auto; padding: 10px;
+    font-size: 20px;white-space: nowrap;color: white; 
+}
+.item_discount a{
+    margin-left: auto;   padding: 14px 10px;
+    width: 170px;
+    background-color: #00FFF0;font-size: 20px;   text-align: center; color: black;
+}
+.item_discount a:hover{
+    background-color: white;color: black;
+}
+
+/*Предмет*/
+
+.game-age{
+    padding: 10px;
+    display: flex;flex-direction: column;
+}
+.game-age div{
+    padding: 10px;
+    display: flex;flex-direction: row;justify-content: stretch;
+}
+.game-age div p{
+    padding: 10px;
+}
+
+.content h3 p{
+    background-color: white;
+    width: auto;
+    color: black;
+    margin-left: 20px;
+    padding: 2px 10px;
+    margin: 0;
+    margin-left: 30px;
+}
+.content h3{
+    display: flex;
+    padding: 0;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    background-color: transparent;
+    border-bottom: 5px solid white;
+}
+
+main{min-height: 100% !important;}
+
+/*Кнопка подверждение формы*/
+.formname input[type=checkbox] {display:none;}
+.formname input[type=checkbox] + label {
+    display: block;position: relative;
+    margin: 12px 0 12px 30px;
+    cursor: pointer;
+    font-size: 16px;line-height: 20px; color: white;
+}
+.formname input[type=checkbox] + label:hover {color:#00FFF0;}
+.formname input[type=checkbox] + label:before {
+    position: absolute;content: '';
+    width: 22px;height: 22px;
+    line-height: 22px;left: -30px;border: 1px solid #00FFF0;
+}
+.formname input[type=checkbox]:checked + label:before{
+    content: '\2714';
+    color:#00FFF0;border: 1px solid #00FFF0; 
+    font-size: 14px;text-align: center;font-weight: bold;
+}
+.formname input[disabled] {opacity: .6;cursor: not-allowed;}
+
+
+/*Элементы формы*/
+.placeholder-container {
+    position: relative;
+    width: 100%;margin-bottom: 20px;
+}
+.placeholder-container input {
+    border: 2px solid #00FFF0;border-right:10px solid #00FFF0;
+    background-color: black;
+    font-size: 16px;line-height: 16px; color: #00FFF0;
+}
+.placeholder-container label {
+    color: #00FFF0;
+  
+    font-size: 16px;line-height: 16px;
+    pointer-events: none;
+    position: absolute;top: 12px;left: 10px;
+    transition: all 200ms;
+}
+.placeholder-container input:focus + label,
+.placeholder-container input:not(:placeholder-shown) + label{
+    top: -10px;left: 10px;
+    color: black;
+    font-size: 11px; 
+    background-color: #00fff0;
+    padding: 2px 10px;
+}
+
+.description{margin-top: 30px;}
+
+/*Новое*/
+#game_area_description{line-height:1.5em;  font-size: 22px;   font-weight: normal;}
+#game_area_description h2{
+    border: none;
+    border-left: 10px solid #00FFF0;
+    text-align: left;
+    padding: 4px 10px;
+    margin-top: 20px;
+}
+.bb_ul > li{
+    list-style-position: outside; list-style-type: square;
+    color: #00FFF0;
+}
+.tabs-content   {margin-top: 10px; padding: 10px;}
+
+.game_area_description  {padding: 20px;}
+
+strong      {color: white;font-size: 18px;}
+.tabs-content #panel1_3c  {padding: 0;}
+
+.accordion-content.links{
+  
+   
+  
+}
+.accordion-content.links a{
+    display: block;
+    margin: 4px 0;border: 2px solid #00FFF0;padding: 4px;
+    background-color: transparent;color: #00FFF0;
+}
+.accordion-content.links a:hover{
+    background-color: #00FFF0;color: black;
+}
+
+div.communitylink_achievement_images{
+    display: flex;flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+div.communitylink_achievement_images > *{width: 64px;height: 64px;}
+div.communitylink_achievement       {border: 4px solid #00FFF0;}
+a.communitylink_achievement         {padding: 5px;text-align: center;font-weight: 600;}
+a.communitylink_achievement + div   {display: none;}
+div.block_title{
+    text-align: center;font-size: 18px;font-weight: 700;
+    padding: 5px;color: #00FFF0;border-left: 6px solid #00FFF0;
+    margin-bottom: 10px;
+}
+:last-child:not(.is-active) > .accordion-title{
+    border: none!important;
+}
+
+.game_area_details_specs_ctn{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.game_area_details_specs_ctn .icon{padding: 0 6px;display: flex;}
+.game_area_details_specs_ctn .label{padding: 6px 8px;width: 100%;}
+
+
+
+/*Предмет*/
+.item_buy{
+    position: relative;
+    margin: 10px;border: 3px solid #00FFF0;
+    color: #00FFF0;
+    max-width: 100%;
+    display: flex;justify-content: flex-start;align-content: center;
+}
+.item_buy:hover{border-color: white;border-left: 20px solid white;}
+
+
+
+.item_buy img{ width: 200px !important;}
+.item_buy .picture{position: relative;overflow: hidden;width: 200px;}
+.item_buy p{padding: 10px;margin: 0;font-size: 18px;font-weight: 700;}
+.item_buy p span{
+    padding: 10px 20px;background-color: #00FFF0;color: black;
+}
+.catalog-item__discount{
+    padding: 10px 20px;background-color: #00FFF0;color: black;
+}
+.item_buy .margin-auto{
+    margin-left: auto;display: flex;align-content: center;align-items: center;
+}
+
+
+.price_count{
+    margin-left: auto; padding: 10px;
+    font-size: 20px;white-space: nowrap;color: white; 
+}
+.item_buy a{
+    margin-left: auto;   padding: 14px 10px;width: 170px;
+    background-color: #00FFF0;font-size: 20px;   text-align: center; color: black;
+}

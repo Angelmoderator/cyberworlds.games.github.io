@@ -1,0 +1,10 @@
+.release{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.accordion .item.mix {width: 100%;}
+ul.accordion .item.mix .picture img{height: 100%;}

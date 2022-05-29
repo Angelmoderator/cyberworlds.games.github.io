@@ -1,0 +1,132 @@
+body,
+        
+
+        .features{
+            display: flex;justify-content: space-around;flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .features li{
+            width: 30%;margin: 2%;
+            display: flex;align-items: center;
+        }
+        .content{
+            margin-left: 30px;
+            width: 420px;
+            display: flex;flex-direction: column;
+        }
+        .content span{font-size: 22px;color: #00FFF0;}
+        .content p{line-height: 1.4!important;}
+
+        html {height: 100%;margin: 0;}
+
+        body{background-image:none;}
+
+        .main{
+            margin: 0;
+            min-width: 100%;
+            position: relative;
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3,
+        .bgimg-4,
+        .bgimg-5{
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .bgimg-1 {
+            background-image: url("/image/Cyberpunk_city.jpg");
+            min-height: 100vh;
+        }
+
+        .bgimg-2 {
+            background-image: url("/image/battlefield-game-2019-wm-3840x2400.jpg");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("/image/peakpx (9).jpg");
+            min-height: 400px;
+        }
+        .bgimg-4 {
+            background-image: url("/image/wallpaperflare.com_wallpaper (8).jpg");
+            min-height: 100vh;
+        }
+        .bgimg-5 {
+            background-image: url("/image/Half_life.jpg");
+            min-height: 600px;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+        
+
+        .caption span.border {
+            background-color: black;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+
+        .quastion-search{
+            display: flex;flex-direction: row;justify-content: space-around;
+        }
+        .quastion-content{display: flex;flex-direction: row;}
+        .quastion-search li{margin: 20px;
+            list-style-type:none;display: flex;flex-direction: column ;align-items: center;
+        }
+        .quastion-search li > span{
+            background-color: #00FFF0;
+            width: 100%;
+            font-size: 22px;
+            margin-bottom: 10px;
+            padding: 5px;
+            color: black;
+        }
+        .quastion-search .quastion-content > span{
+            color: #00FFF0;
+            font-size: 40px;
+            height: 120px;
+           margin: 10px;
+            padding: 20px;
+            border: 5px dashed #00FFF0;
+        }
+        .quastion-search .quastion-content > p{
+            padding: 5px;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3,
+            .bgimg-4
+            .bgimg-5{
+                background-attachment: scroll;
+            }
+        }
+
+
+

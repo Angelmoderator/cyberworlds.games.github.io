@@ -1,0 +1,156 @@
+/* Шапка */
+
+header{
+    background-color: black;
+    color: white;  
+    box-shadow: 0 0 0.2rem rgb(0 0 0 / 10%), 0 0.2rem 0.4rem rgb(0 0 0 / 20%);
+    position: fixed;left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.has-tip{
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    border-bottom: none;
+}   
+header .grid-x{
+    height: 48px;
+}
+
+.logo{
+    border-left: 4px solid #00FFF0;
+    background-image: url("/image/logoupdate.svg");
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-attachment:scroll;
+    width: 220px;
+}
+.logo:hover{
+    background-image: url("/image/logo.svg");
+}
+
+.dropdown > li > a{
+    padding: 5px 10px 6px 5px !important;
+    font-size: 36px !important;
+    background-color: white;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+.dropdown.menu > li.is-active > a{
+    color: black;
+}
+.dropdown {
+    background-color: white;
+    color: black;
+}
+.dropdown  a{
+    color: black;
+}
+.is-dropdown-submenu  a:hover{
+    background-color: black;
+    color: white;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+    display: none;
+}
+
+.menu > h4{
+    margin-left: 5px;
+        padding: 4px;
+}
+
+.elements img{
+    width: 24px;
+    margin-right: 5px;
+}
+
+.search{
+    padding: 0px 0px;
+}
+
+.search-input{
+    color: #00FFF0;
+    border: none;   
+    height: 40px;
+    border-bottom:4px solid white;
+    padding: 5px 2px;
+
+    position: relative;
+    box-sizing: border-box;
+    background-color: black;
+}
+.search-input:hover:focus{
+    color: #00FFF0;
+    border: none;
+    border-bottom:4px solid #00FFF0;
+
+    position: relative;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.search-input{
+    width: 55%;
+   
+}
+.search-list{
+    width: 25%;
+   
+    background-color: black;
+    color: #00FFF0;
+    height: 40px;
+    border: none;
+    border-bottom: 4px solid white;
+}
+.search-list:hover{
+    background-color: white;
+    color: black;
+}
+.search-start{
+    width: 20%;
+    height: 40px;
+}
+
+[type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus{
+    position: relative;
+    border: none;border-bottom:4px solid #00FFF0;
+    box-sizing: border-box; box-shadow: none;
+    background-color: black; color: #00FFF0;
+}
+
+.login .cell{
+    padding: 0 0.500rem;
+}
+
+.cart a,.enter a{
+
+    margin-bottom: 3px;
+    margin-top: 5px;
+    top:50%;
+    color: white;
+}
+.cart a:hover,.enter a:hover{
+    margin-bottom: 3px;
+    margin-top: 5px;
+    top:50%;
+
+    border-bottom: 4px solid white;
+}
+
+.cart::after{
+    margin-left: 2px;
+    content: url('/image/icons/cart.svg');
+    align-items: center;
+    background-position: center;
+}
+
+.enter::after{
+    margin-left: 2px;
+    content: url('/image/icons/user.svg');
+    align-items: center;
+    background-position: center;
+}

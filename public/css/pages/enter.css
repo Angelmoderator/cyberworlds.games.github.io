@@ -1,0 +1,82 @@
+.form_enter{
+    margin: 0 auto;
+    width: 895px;height: 690px;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 40pt 50pt 0 rgb(0 0 0 / 35%);
+}
+
+.cover{
+    position: relative;
+    width: 50%;height: 100%;
+    background-image: url("/image/background/Minecraft.png");background-size: cover;background-position: bottom;background-repeat: no-repeat;
+    display: flex;flex-grow: 0;flex-shrink: 0;
+    overflow: hidden;
+}
+
+
+.message{
+    background-color:rgba(0, 0, 0, .5);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 40px 56px 40px 56px; */
+}
+.message h2{
+    background-color: black;
+    padding: 10px;
+    color: white;border: none;font-size: 36px;font-weight: 700;
+}
+.message h1{
+    width: 221px;
+    margin: 0 0 24px;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 52px;
+    margin: 40px;
+    color:white;
+}
+.message p{
+    margin: 40px;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 40px;
+}
+
+.form{
+    padding: 40px 48px;
+    background-color: #0b0b15;
+    color: white;
+}
+.preview p          {margin-top: 5px;}
+.preview h2         {margin-bottom: 5px;}
+.data               {display: flex;flex-direction: column;}
+.data label + input {margin: 0 0 20px 0;}
+.form               {display: flex;flex-direction: column;justify-content: space-between;}
+
+/* .form input{padding: 5px; } */
+/* .form input:hover{outline: 2px solid #00FFF0; } */
+
+button{
+    display: block;
+    color: black;background-color: #00FFF0;    
+    border: 2px solid #00FFF0;padding: 3px 4px; 
+}
+.Log_In{
+    padding: none;padding: 14px 40px;
+    font-size: 16px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #00FFF0;
+}
+
+main.cell.parent{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}

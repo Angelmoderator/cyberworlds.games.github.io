@@ -1,0 +1,169 @@
+
+
+.catalog-filter__block{
+    padding: 10px;
+    background: black;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.catalog-filter__block__head{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 17px;
+}
+
+
+
+.input-number{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    justify-items: flex-start;
+}
+.input-number div{
+    display: flex;
+    align-content: center;
+
+}
+
+.catalog-filter__block input{
+    padding: 5px;
+    color: #00FFF0;
+    font-size: 22px;
+    background: transparent;
+    border: 3px solid #00FFF0;
+    border-left: none;
+    color: #00FFF0;
+    width: 80px;
+    margin: 0;
+}
+.input-number span{
+    padding: 5px 10px;
+    height: 2.4375rem;
+    color: #00FFF0;
+    border: 3px solid #00FFF0;
+    border-right: none;
+    font-size: 18px;
+}
+.accordion-title{
+    text-align: center;
+}
+
+
+.catalog-filter__checklist .picker{
+    margin-bottom: 10px;
+}
+.picker{
+    cursor: pointer;
+    margin: 0 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+.picker .picker-handle{
+    display: block;float: left;
+    height: 20px;width: 20px;
+    margin: 0 5px 0 0;
+    position: absolute;
+    top:0;left:0;
+    border: 1px solid #00FFF0;
+}
+.picker.picker-checkbox .picker-flag, .picker.picker-radio .picker-flag{
+    position: relative;
+    background-color: #00FFF0;
+    background-size: 0;border-radius: 0;
+    display: block;
+    height: 100%;margin: 0;width: 100%;overflow: hidden;
+}
+.picker .picker-label{
+    color: #00FFF0;cursor: pointer;
+    display: block;float: left;
+    font-size: 13px;line-height: 20px;
+    font-weight: 300;padding-left: 35px;margin-bottom: 0;
+}
+input[type=checkbox], input[type=radio]{
+    margin: 4px 0 0;
+    line-height: normal;
+}
+.picker-element{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.picker-element input:checked ~ .picker-flag:after{
+    display: block;
+}
+.picker-element input:checked ~ .picker-flag:before{
+    display: block;
+}
+.picker.picker-checkbox .picker-flag:before, .picker.picker-radio .picker-flag:before{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top:-1px;left:-1px;right:-1px;bottom: -1px;display: none;
+    background: greenyellow;
+}
+
+/*Переписывание стиля*/
+.switch{
+    display: flex;
+    align-content: center;
+}
+.switch p{
+    margin-left: 30px;
+    font-size: 18px;
+}
+.switch-paddle::after{
+    top:0;left:0;
+    width: 20px;height: 20px;background: white;
+}
+input:checked ~ .switch-paddle::after{
+    left: 0;
+    background: #00FFF0;
+}
+input:checked ~ .switch-paddle{
+    
+    background-color: transparent;
+}
+.switch-paddle{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 20px;
+}
+.title{
+    margin: 0;
+    margin-bottom: 40px;
+    width: auto;
+    
+}
+.search-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background: black;
+    color: white;
+    align-self:flex-start;
+    margin-bottom: 60px;
+}
+.search-info  *{
+    margin: 0px;
+    
+}
+.search-info  label{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+.search-info select{
+    border: none;
+    border: 2px solid #00FFF0;
+    font-size: 18px;
+    width: 200px;
+    background-color: black;
+    color: #00FFF0;
+}
